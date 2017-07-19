@@ -34,7 +34,7 @@ class App extends Component {
         <TodoWrapper>
           <TodoSearchInput placeholder="Search todo..." dataStore={dataStore} type="text"/>
           <TodoList dataStore={dataStore}/>
-          <TodoAddInput placeholder="Add new toto..." dataStore={dataStore} type="text"/>
+          <TodoAddInput placeholder="Add new todo..." dataStore={dataStore} type="text"/>
         </TodoWrapper>
       </Outer>
     )

@@ -23,7 +23,7 @@ class TodoStore {
   @observable searchKeyword = ''
 
   @computed get filteredTodos() {
-    let filterMatch = new RegExp(this.searchKeyword, 'i')
+    const filterMatch = new RegExp(this.searchKeyword, 'i') // match with case insensitive
     return this.todos.filter(todo => {
       // if no keyword is set, or it matches
       return !this.searchKeyword || filterMatch.test(todo.text)
